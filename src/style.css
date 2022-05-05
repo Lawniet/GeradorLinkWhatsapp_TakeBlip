@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body
+{
+    background-color: #1A2437;
+}
+
+.app img
+{
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.d-none
+{
+    display: none !important;
+}
+
+.app
+{
+    max-width: 700px;
+    margin: 3rem auto;
+}
+
+.app h1
+{
+    font-weight: 300;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.app h1 img
+{
+    width: 40px;
+    margin-left: 20px;
+}
+
+.app p.info
+{
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+nav.source-code
+{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+nav.source-code a
+{
+    text-decoration: none;
+    color: #0A8CD2;
+    font-weight: 500;
+    transition: all 0.2s;
+    font-size: 13px;
+}
+
+nav.source-code a:hover, nav.source-code a:active
+{
+    color: #2CC4D5;
+}
+
+.how-to-use h2
+{
+    font-size: 25px;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: #2CC4D5;
+}
+
+.how-to-use li
+{
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.how-to-use li span:nth-child(1)
+{
+    margin-right: 5px;
+    font-size: 19px;
+    color: #14CDE1;
+}
+
+.user-message
+{
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.user-message.success
+{
+    color: #fff;
+}
+
+.user-message.error
+{
+    background-color: rgb(209, 86, 77);
+    color: #fff;
+}
+
+form input, select
+{
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 17px;
+}
+
+form select
+{
+    text-align: center;
+}
+
+form button
+{
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    font-weight: 600;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 13px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s;
+}
+
+form .initial
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+form .input-group
+{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    transition: all .2s;
+    margin-bottom: 5px;
+}
+
+form .input-group:nth-child(1)
+{
+    margin-bottom: 5px;
+}
+
+form .input-group label
+{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(73, 73, 73);
+}
+
+form .input-group img
+{
+    width: 17px;
+    margin: 0 10px;
+}
+
+form .input-group div
+{
+    display: flex;
+    align-items: center;
+}
+
+
+form .input-group div input, select
+{
+    flex-grow: 1;
+    width:100%;
+}
+
+form .input-group div input[type=number]
+{
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+form .input-group div input[type=number]::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.initial footer button
+{
+    color: #ffffff;
+    background-color: #0A8CD2;
+}
+
+.initial footer button:disabled
+{
+    opacity: 0.4;
+}
+
+.initial footer button:hover,
+.initial footer button:focus
+{
+    background-color: #2CC4D5;
+}
+
+.finished footer button:nth-child(1)
+{
+    box-shadow: none;
+    border: 2px solid #2CC4D5;
+    color: #fff;
+}
+
+.finished footer button:nth-child(2)
+{
+    margin: 0 10px;
+}
+
+.finished footer button:nth-child(1):hover,
+.finished footer button:nth-child(1):focus
+{
+    background-color: #2CC4D5;
+    color: #fff;
+}
+
+.finished footer button:nth-child(2),
+.finished footer button:nth-child(3)
+{
+    background-color: #2CC4D5;
+    color: #fff;
+}
+
+.finished footer button:nth-child(2):hover,
+.finished footer button:nth-child(2):focus,
+
+.finished footer button:nth-child(3):hover,
+.finished footer button:nth-child(3):focus
+{
+    background-color: #2CC4D5;
+}
+
+.finished .input-group
+{
+    overflow: hidden;
+}
+
+.finished .input-group input[type='text']
+{
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+    .app
+    {
+        max-width: 100% !important;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .app img
+    {
+        max-width: 50px;
+    }
+
+    .app h1
+    {
+        font-size: 20px;
+    }
+
+    footer
+    {
+        flex-direction: column;
+        padding: 0
+    }
+
+    footer button.copy .open
+    {
+        margin-right: 0 !important;
+    }
+
+    footer button.new
+    {
+        margin: 5px 0 !important;
+    }
+
+    .initial footer button
+    {
+        flex-grow: 1 !important;
+        margin-top: 1rem;
+    }
+}

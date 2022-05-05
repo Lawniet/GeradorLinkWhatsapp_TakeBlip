@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerador de links de conversa no WhatsApp</title>
+        <link rel="stylesheet" href="./src/style.css">
+        <link rel="shortcut icon" href="./img/blip.svg" type="image/x-icon">
+    </head>
+    <body>
+        <main class="app">
+            <img src="./img/blip.svg" alt="WhatsApp">
+            <h1>Gerador de link para Whatsapp - Take BLiP</h1>
+            <form name="form" action="#" method="#">
+                <p class="user-message display-none"></p>
+                <div class="initial">
+
+                    <div class="input-group">
+                        <label for="phone">Número do whatsapp</label>
+                        <div>
+                            <img src="./img/phone.svg" alt="telefone">
+                            <input type="number" inputmode="numeric" id="phone" name="phone" minlength="11" autofocus placeholder="00 0 0000 0000" required />
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Mensagem inicial </label>
+                        <div>
+                            <img src="./img/chat.svg" alt="chat">
+                            <input id="message" type="text" name="message" />
+                        </div>
+                    </div>
+
+                   <div class="input-group">
+                        <label for="plataforma">Plataforma alvo</label>
+                        <div>
+                            <img src="./img/plataform.svg" alt="chat">
+                            <select name="plataform" id="plataform" required>
+                                <option value="desktop">Desktop</option>
+                                <option value="mobile">Mobile</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <footer>
+                        <button type="submit" name="submit" class="generate" disabled>Criar link</button>
+                    </footer>
+                </div>
+
+                <div class="finished d-none">
+                    <div class="input-group">
+                        <label for="link">Seu link</label>
+                        <div>
+                            <img src="./img/link.svg" alt="Link">
+                            <input id="link" type="text" name="link" />
+                        </div>
+                    </div>
+                    <footer>
+                        <button type="button" name="copy" class="copy">Copiar</button>
+                        <button type="button" name="new" class="new">Novo</button>
+                        <button type="button" name="open" class="open">Abrir</button>
+                    </footer>
+                </div>
+            </form>
+            <section class="how-to-use">
+                <h2>Como funciona</h2>
+                <ul class="steps">
+                    <li>
+                        <span class="index">1. </span>
+                        <span class="text">Insira o nº do WhatsApp sem se preocupar com hífem ou parênteses</span>
+                    </li>
+                    <li>
+                        <span class="index">2. </span>
+                        <span class="text">Escreva uma mensagem inicial para ser exibida (etapa opcional)</span>
+                    </li>
+                  <li>
+                        <span class="index">3. </span>
+                        <span class="text">Selecione a plataforma para acessar o link encurtado</span>
+                    </li>
+                    <li>
+                        <span class="index">4. </span>
+                        <span class="text">Clique no botão "CRIAR LINK"</span>
+                    </li>
+                    <li>
+                        <span class="index">5. </span>
+                        <span class="text">Confira o resultado antes de usar</span>
+                    </li>
+                </ul>
+            </section>
+            <p class="info">
+                O gerador de links para o WhatsApp é uma ótima ferramenta para ações de marketing ou relacionamento. Com o link para mensagens personalizadas do WhatsApp, você poderá utilizar em campanhas, redes sociais, email marketing, banners e etc. O bom de encurtar e personalizar links e mensagens do WhatsApp é que funcionará no desktop e no mobile da mesma forma. Faça bom uso da ferramenta encurtadora de WhatsApp.
+            </p>
+
+            <nav class="source-code">
+                <a href="" target="_blank">Repositório no Github</a>
+            </nav>
+        </main>
+        <script type="module" src="./assets/script.js"></script>
+    </body>
+</html>
